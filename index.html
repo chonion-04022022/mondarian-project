@@ -6,24 +6,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mondrian Project</title>
   <style>
-    /* 
-    Write your CSS here 
-    Gap Colour: #000
-    White: #F0F1EC
-    Red: #E72F24
-    Black: #232629
-    Blue: #004592
-    Yellow: #F9D01E
-
-    For dimensions, see dimensions.png image.
-    HINT: Remember you can't change the properties of grid lines.
-    But grid lines are transparent!
-    */
+    body{
+      display:flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 25%;
+      background-color: rgba(19, 19, 19, 0.845);
+    }
+    .content{
+      background-color: rgb(0, 0, 0);
+      height: 747x;
+      width: 748px;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap:9px;
+    }
+   
+    .first{
+      background-color: red;
+    }
+    .second{
+      background-color: aliceblue;
+      grid-column-start: 2;
+      grid-column-end: 5;
+    }
+    .third{
+      background-color: aliceblue;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+    .fourth{
+      background-color: aliceblue;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+    .little{
+      background-color: rgb(0, 74, 139);
+      grid-column-start: 4;
+      grid-column-end: 5;
+      border-bottom: 10px solid black;
+    }
+    .lil{
+      background-color: aliceblue;
+      grid-row-start: 3;
+      grid-row-end:4;
+    }
+    .lil{
+      background-color: aliceblue;
+      grid-row-start: 3;
+      grid-row-end: 5;
+    }
+    .yellow{
+      background-color: aliceblue;
+    }
+    .black{
+      background-color: yellow;
+    }
   </style>
 </head>
 
 <body>
-  <!-- Write your HTML here -->
+  <div class="content">
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <div class="fourth"></div>
+    <div class="little"></div>
+    <div class="lil white"></div>
+    <div class="yellow"></div>
+    <div class="black"></div>
+  </div>
 </body>
 
 </html>
